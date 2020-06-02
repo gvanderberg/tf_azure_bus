@@ -13,16 +13,16 @@ resource "azurerm_servicebus_namespace" "this" {
   tags = var.tags
 }
 
-resource "azurerm_servicebus_namespace_network_rule_set" "this" {
-  namespace_name      = azurerm_servicebus_namespace.this.name
-  resource_group_name = var.resource_group_name
+# resource "azurerm_servicebus_namespace_network_rule_set" "this" {
+#   namespace_name      = azurerm_servicebus_namespace.this.name
+#   resource_group_name = var.resource_group_name
 
-  default_action = "Deny"
+#   default_action = "Deny"
 
-  network_rules {
-    # subnet_id                            = data.azurerm_subnet.this.id
-    # ignore_missing_vnet_service_endpoint = true
-  }
+#   network_rules {
+#     subnet_id                            = data.azurerm_subnet.this.id
+#     ignore_missing_vnet_service_endpoint = true
+#   }
 
-  ip_rules = []
-}
+#   ip_rules = []
+# }
