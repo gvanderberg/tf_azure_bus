@@ -20,8 +20,8 @@ resource "azurerm_servicebus_namespace_network_rule_set" "this" {
   default_action = "Deny"
 
   network_rules {
-    subnet_id                            = data.azurerm_subnet.this.id
-    ignore_missing_vnet_service_endpoint = true
+    # subnet_id                            = data.azurerm_subnet.this.id
+    # ignore_missing_vnet_service_endpoint = true
   }
 
   ip_rules = []
