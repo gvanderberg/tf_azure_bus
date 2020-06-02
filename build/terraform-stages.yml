@@ -17,10 +17,16 @@ stages:
         value: prd_tfplan
       - name: resource_group_name
         value: "azrg-prd-zn-bus"
+      - name: service_bus_name
+        value: "azbus-dev-zn-titansoft"
+      - name: subnet_name
+        value: "azsnet-dev-zn-k8s"
+      - name: subnet_virtual_network_name
+        value: "aznet-dev-zn-titansoft"
+      - name: subnet_resource_group_name
+        value: "azrg-dev-zn-net"
       - name: tags_environment
         value: "Production"
-      - name: virtual_network_name
-        value: "aznet-prd-zn-titansoft"
       - name: workspace_name
         value: "tf-azure-bus-prd"
     condition: succeeded()
