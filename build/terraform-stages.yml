@@ -19,6 +19,8 @@ stages:
         value: "azrg-prd-zn-bus"
       - name: service_bus_name
         value: "azbus-dev-zn-titansoft"
+      - name: service_bus_sku
+        value: "Basic"
       - name: subnet_name
         value: "azsnet-dev-zn-k8s"
       - name: subnet_virtual_network_name

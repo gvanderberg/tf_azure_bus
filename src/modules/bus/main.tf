@@ -8,7 +8,7 @@ resource "azurerm_servicebus_namespace" "this" {
   name                = var.service_bus_name
   location            = var.resource_group_location
   resource_group_name = var.resource_group_name
-  sku                 = "Basic"
+  sku                 = var.service_bus_sku
 
   tags = var.tags
 }

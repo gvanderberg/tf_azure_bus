@@ -13,6 +13,11 @@ variable "service_bus_name" {
   type        = string
 }
 
+variable "service_bus_sku" {
+  description = "Defines which tier to use. Options are basic, standard or premium."
+  type        = string
+}
+
 variable "subnet_name" {
   description = "Specifies the name of the Subnet."
   type        = string

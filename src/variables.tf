@@ -10,6 +10,10 @@ variable "service_bus_name" {
   default = "__service_bus_name__"
 }
 
+variable "service_bus_sku" {
+  default = "__service_bus_sku__"
+}
+
 variable "subnet_name" {
   default = "__subnet_name__"
 }
